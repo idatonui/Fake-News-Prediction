@@ -99,3 +99,104 @@ Facilitates temporal analysis and trend tracking.
 ## Data Visualization & Preprocessing
 
 ### EDA
+
+- This stage entails thoroughly exploring and comprehending the dataset prior to employing machine learning algorithms. It plays a crucial role in tasks such as data preprocessing, selecting appropriate models, and devising strategies for evaluating model performance.
+
+#### Distribution of Subject Column
+
+This is the distribution of subjects within the true news dataset using a bar plot, providing insights into the variety and frequency of different subjects covered in the news articles.
+
+
+![Alternative text](https://github.com/idatonui/Fake-News-Prediction/blob/main/images/subject%20in%20True%20News.png)
+
+
+- This bar plot illustrate the distribution of subjects in both true and fake news datasets. This can help identify which subjects are more common in each dataset and whether there's a notable difference.
+
+
+
+![Alternative text](https://github.com/idatonui/Fake-News-Prediction/blob/main/images/subject%20in%20True%20News.png)
+
+
+The bar chart shows the distribution of subjects covered in true news articles, with politics being the most common subject and world news following in second.  
+
+
+
+### Visualization: Word Clouds
+
+
+- This segment provides a visual representation of the most frequent words in both true and fake news datasets through word clouds, allowing for quick insights into the prevalent themes or topics within each category.
+
+#### Fake News Word Cloud
+
+
+![Alternative text](https://github.com/idatonui/Fake-News-Prediction/blob/main/images/Word%20Cloud%20for%20Fake%20News.png)
+
+
+#### True News Word Cloud
+
+
+![Alternative text](https://github.com/idatonui/Fake-News-Prediction/blob/main/images/word%20cloud%20for%20True%20News.png)
+
+
+
+## Modeling
+ 
+### Baseline Model: Logistic Regression
+
+The baseline model serves as an initial benchmark for evaluating the performance of more complex models in the task of fake news prediction. In this project, logistic regression is employed as the baseline model.
+
+Below are the performance metrics derived from the model evaluation:
+- Accuracy: 99.53%
+- Precision: 99.67%
+- Recall: 99.35%
+- F1 Score: 99.51%
+
+Interpretation of Metrics
+- Accuracy: Indicates the overall correctness of predictions, with our model achieving an accuracy of 99.53%.
+- Precision: Reflects the reliability of our model in correctly identifying fake news articles, with a precision score of 99.67%, minimizing false positives.
+- Recall: Measures the model's ability to capture all actual instances of fake news, achieving a recall score of 99.35%, thus reducing false negatives.
+- F1 Score: Represents the harmonic mean of precision and recall, indicating a balanced performance between the two metrics, with our model achieving an F1 score of 99.51%.
+
+
+The baseline Logistic Regression model demonstrates exceptional performance in accurately classifying fake news articles. However, further evaluation on unseen data and exploration of advanced models may be warranted to ensure robustness and generalization.
+
+
+### Improving the Performance of the Model
+
+While logistic regression model performed well on the test set, there are ways to make it even more efficient:
+
+- **Feature engineering:** Using more complex text representations, such as word embeddings or topic models, in place of merely using a bag-of-words approach, may help reveal more detailed relationships between words.
+
+- **Hyperparameter optimization:** this will determine the best parameter configuration for the dataset by fine-tuning the logistic regression model's hyperparameters using strategies like grid search and randomized search.
+
+**Multinomial Naive Bayes Model**
+
+Performance Metrics:
+
+Accuracy: 94.78%
+Precision: 94.78%
+Recall: 94.78%
+F1-score: 94.77%
+
+
+**Support Vector Machine Model**
+Performance Metrics:
+
+Accuracy: 99.36%
+Precision: 99.36%
+Recall: 99.36%
+F1-score: 99.36%
+
+
+Both models were trained and evaluated for the task of classifying fake news articles. The Multinomial Naive Bayes model achieved an accuracy, precision, recall, and F1-score of approximately 94.78%. Meanwhile, the Support Vector Machine model exhibited superior performance with all metrics reaching approximately 99.36%.
+
+The Support Vector Machine model demonstrated higher accuracy and precision compared to the Multinomial Naive Bayes model, indicating its effectiveness in accurately classifying fake news. However, further analysis and fine-tuning may be necessary to optimize both models for specific project requirements.
+
+
+
+### Model 2: Deep Learning with Convolutional Neural Networks (CNNs)
+
+- Using 1D convolutions to extract patterns (like n-grams) in the text.
+
+
+### Model Evaluation
