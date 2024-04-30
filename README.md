@@ -32,7 +32,7 @@ The proliferation of social media platforms and digital news outlets has facilit
 
 ### **What problem is being addressed?**
 
-The primary problem being addressed is the pervasive presence of fake news within the digital media landscape. Fake news undermines the credibility of Tuko News as a reputable journalistic entity, erodes reader confidence, and contributes to the polarization of public opinion. Moreover, the dissemination of false information can have far-reaching consequences, including social unrest, political instability, and legal ramifications.
+The primary problem being addressed is the pervasive presence of fake news within the digital media landscape. Fake news undermines the credibility of International News as a reputable journalistic entity, erodes reader confidence, and contributes to the polarization of public opinion. Moreover, the dissemination of false information can have far-reaching consequences, including social unrest, political instability, and legal ramifications.
 
 ### **How the project aims to solve the problems?**
 
@@ -46,11 +46,7 @@ The project aims to develop and implement sophisticated systems for detecting an
 
 ## Data Understanding
 
-The dataset comprises two CSV files: "Fake.csv" and "True.csv", sourced from Kaggle each contain 20,000 rows. Columns include 'title', 'text', 'subject', and 'date'
-
-
-
-The data used in this project was obtained from: Kaggle.
+The data used in this project was obtained from: [Kaggle](https://www.kaggle.com/datasets/clmentbisaillon/fake-and-real-news-dataset).
 
 The dataset is divided into: Fake.csv and True.csv.
 
@@ -113,9 +109,9 @@ The bar chart shows the distribution of subjects covered in true news articles, 
 
 ## Model Evaluation
 
-- The baseline Logistic Regression model achieved exceptional performance across all metrics, with accuracy, precision, recall, and F1-score all exceeding 99%.
-- The Multinomial Naive Bayes model exhibited slightly lower performance compared to the baseline Logistic Regression model, with all metrics around 94.78%.
-- The Support Vector Machine model demonstrated similar performance to the baseline Logistic Regression model, with all metrics reaching approximately 99.36%.
+1. The baseline Logistic Regression model achieved exceptional performance across all metrics, with accuracy, precision, recall, and F1-score all exceeding 99%.
+2. The Multinomial Naive Bayes model exhibited slightly lower performance compared to the baseline Logistic Regression model, with all metrics around 94.78%.
+3. The Support Vector Machine model demonstrated similar performance to the baseline Logistic Regression model, with all metrics reaching approximately 99.36%.
 
 
 - Both the baseline Logistic Regression and the Support Vector Machine models outperformed the Multinomial Naive Bayes model in terms of accuracy, precision, recall, and F1-score.
