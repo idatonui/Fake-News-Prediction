@@ -83,8 +83,6 @@ Text preprocessing was also performed and it involved steps like lowercasing, re
 ### Visualization: Word Clouds
 
 
-- This segment provides a visual representation of the most frequent words in both true and fake news datasets through word clouds, allowing for quick insights into the prevalent themes or topics within each category.
-
 #### Fake News Word Cloud
 
 
