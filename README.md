@@ -69,20 +69,14 @@ Text preprocessing was also performed and it involved steps like lowercasing, re
 
 #### Distribution of Subject Column
 
-This is the distribution of subjects within the true news dataset using a bar plot, providing insights into the variety and frequency of different subjects covered in the news articles.
 
 
 ![Alternative text](https://github.com/idatonui/Fake-News-Prediction/blob/main/images/subject%20in%20True%20News.png)
 
 
-- This bar plot illustrate the distribution of subjects in both true and fake news datasets. This can help identify which subjects are more common in each dataset and whether there's a notable difference.
-
 
 
 ![Alternative text](https://github.com/idatonui/Fake-News-Prediction/blob/main/images/subject%20in%20True%20News.png)
-
-
-The bar chart shows the distribution of subjects covered in true news articles, with politics being the most common subject and world news following in second.  
 
 
 
