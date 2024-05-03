@@ -56,7 +56,7 @@ Text preprocessing was also performed and it involved steps like lowercasing, re
 
 
 
-![Alternative text](https://github.com/idatonui/Fake-News-Prediction/blob/main/images/Subjects%20in%20Fake%20News.png)
+![Alternative text](https://github.com/idatonui/Fake-News-Prediction/blob/main/images/Subjects%20in%20Fake%20Class.png)
 
 
 
