@@ -17,9 +17,7 @@
 
 ## Introduction
 
-In today's digital landscape, the rampant spread of misinformation and fake news poses a grave threat to societies worldwide. With 68% of American adults relying on social media for news, falsehoods can easily proliferate unchecked, as evidenced by studies showing that false information on platforms like Twitter spreads faster and wider than truth. The consequences are dire, eroding trust in institutions, polarizing communities, and undermining democratic processes.
-
-The impact of fake news extends beyond politics, significantly affecting public health. During the COVID-19 pandemic, misinformation led to confusion and panic-buying of unproven remedies, while vaccine hesitancy fueled by false claims jeopardized efforts to curb the virus's spread. Addressing this challenge requires data-driven approaches, drawing on techniques from machine learning, natural language processing, and social network analysis. Researchers and policymakers are increasingly leveraging these tools to predict and mitigate the dissemination of fake news, enabling targeted interventions to combat its harmful effects.
+In today's digital age, the spread of misinformation, commonly known as fake news, has become a pervasive issue, undermining the integrity of journalistic organizations worldwide. The impact of fake news extends beyond politics, significantly affecting public health. During the COVID-19 pandemic, misinformation led to confusion and panic-buying of unproven remedies, while vaccine hesitancy fueled by false claims jeopardized efforts to curb the virus's spread. Addressing this challenge requires data-driven approaches, drawing on techniques from machine learning, natural language processing, and social network analysis. Researchers and policymakers are increasingly leveraging these tools to predict and mitigate the dissemination of fake news, enabling targeted interventions to combat its harmful effects.
 
 
 ## Problem Statement
@@ -64,18 +62,23 @@ Text preprocessing was also performed and it involved steps like lowercasing, re
 
 
 ## Modeling
- Two models (Logistic Regression and ) were built and trained using the training dataset and CountVectorizer class from the sklearn library was used to convert the preprocessed text into feature vectors. Multinomial Naive Bayes Model and Support Vector Machine Model performance were used to compare it with the baseline model. The performance of the models was evaluated using accuracy, precision and recall.
+ Two models (Logistic Regression and LSTM) were built and trained using the training dataset and CountVectorizer class from the sklearn library was used to convert the preprocessed text into feature vectors. LSTM model was also tuned and the results were compared with the two models. The performance of the models was evaluated using accuracy.
 
 ## Model Evaluation
 
-1. The baseline Logistic Regression model achieved exceptional performance across all metrics, with accuracy, precision, recall, and F1-score all exceeding 99%.
-2. The Multinomial Naive Bayes model exhibited slightly lower performance compared to the baseline Logistic Regression model, with all metrics around 94.78%.
-3. The Support Vector Machine model demonstrated similar performance to the baseline Logistic Regression model, with all metrics reaching approximately 99.36%.
+- Logistic Regression:
+Accuracy: 99.53% (highest among the three models).
+- LSTM:
+Accuracy: 98.48% (second highest).
+- Tuned LSTM:
+Accuracy: 98.46% (slightly lower than Basic LSTM).
 
 
-- Both the baseline Logistic Regression and the Support Vector Machine models outperformed the Multinomial Naive Bayes model in terms of accuracy, precision, recall, and F1-score.
-- Among these models, the Support Vector Machine model showed the most promising performance, matching or slightly surpassing the baseline Logistic Regression model across all metrics.
-- Therefore, based on the provided evaluation results, the Support Vector Machine model appears to be the better-performing model for the task of classifying fake news articles, followed closely by the baseline Logistic Regression model.
+- Logistic Regression performed the best in terms of accuracy.
+- Basic LSTM and Tuned LSTM showed comparable results with slight variations.
+- Results suggest that traditional models like Logistic Regression can be more accurate than deep learning models in some cases.
+
+Logistic Regression, with a 99.53% accuracy rate, stands out as the best model for fake news detection among the evaluated models. Its high accuracy allows for precise identification and flagging of fake news, reducing false positives and negatives. By analyzing text-based features, Logistic Regression can quickly and effectively classify news articles as real or fake, making it a reliable choice for combating misinformation in real-time scenarios. This accuracy ensures robust content filtering and helps maintain information integrity.
 
 
 ## Limitations and Next Steps
